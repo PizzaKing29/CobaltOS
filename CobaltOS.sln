@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CobaltOS", "CobaltOS\CobaltOS.csproj", "{261CA48F-309B-48E6-9068-8355A43A7C4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{261CA48F-309B-48E6-9068-8355A43A7C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261CA48F-309B-48E6-9068-8355A43A7C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261CA48F-309B-48E6-9068-8355A43A7C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261CA48F-309B-48E6-9068-8355A43A7C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FE978C6-983E-4F21-80A2-9397BF6AC530}
+	EndGlobalSection
+EndGlobal
