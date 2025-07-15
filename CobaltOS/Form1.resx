@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="ParagraphAbout.Text" xml:space="preserve">
     <value>CobaltOS is an All-In-One PC Repair Program and offers several useful utilities for testing programs or helpful shortcuts! This program also offers multiple utilization features for perfect PC optimization.</value>
   </data>
 </root>

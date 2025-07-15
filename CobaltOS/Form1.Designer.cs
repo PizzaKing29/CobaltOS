@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Home = new TabControl();
             tabPage1 = new TabPage();
-            button1 = new Button();
+            ParagraphAbout = new Label();
+            QuickRepair = new Button();
             LastRepair = new Label();
             SystemHealth = new Label();
-            label3 = new Label();
+            WelcomeMessage = new Label();
             Optimization = new TabPage();
             StartOptimizingButton = new Button();
             FasterDNS = new CheckBox();
@@ -53,7 +54,7 @@
             SleepPC = new Button();
             RestartPC = new Button();
             ShutdownPC = new Button();
-            label2 = new Label();
+            PowerOptions = new Label();
             EnterSafeModeButton = new Button();
             EnterBIOSButton = new Button();
             EnterSafeMode = new Label();
@@ -65,7 +66,7 @@
             CreateRestoreButton = new Button();
             CreateRestorePoint = new Label();
             SearchForDupedFiles = new Button();
-            label1 = new Label();
+            SearchDupedFiles = new Label();
             EnableOrDisableDefender = new Label();
             EnableOrDisableDefenderButton = new Button();
             Settings = new TabPage();
@@ -73,7 +74,6 @@
             SaveSettingsButton = new Button();
             DarkMode = new CheckBox();
             OptimizeOnBoot = new CheckBox();
-            label4 = new Label();
             Home.SuspendLayout();
             tabPage1.SuspendLayout();
             Optimization.SuspendLayout();
@@ -98,11 +98,11 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(label4);
-            tabPage1.Controls.Add(button1);
+            tabPage1.Controls.Add(ParagraphAbout);
+            tabPage1.Controls.Add(QuickRepair);
             tabPage1.Controls.Add(LastRepair);
             tabPage1.Controls.Add(SystemHealth);
-            tabPage1.Controls.Add(label3);
+            tabPage1.Controls.Add(WelcomeMessage);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -111,14 +111,22 @@
             tabPage1.Text = "Home";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // ParagraphAbout
             // 
-            button1.Location = new Point(25, 225);
-            button1.Name = "button1";
-            button1.Size = new Size(90, 23);
-            button1.TabIndex = 3;
-            button1.Text = "Quick Repair";
-            button1.UseVisualStyleBackColor = true;
+            ParagraphAbout.Location = new Point(25, 100);
+            ParagraphAbout.Name = "ParagraphAbout";
+            ParagraphAbout.Size = new Size(377, 50);
+            ParagraphAbout.TabIndex = 4;
+            ParagraphAbout.Text = resources.GetString("ParagraphAbout.Text");
+            // 
+            // QuickRepair
+            // 
+            QuickRepair.Location = new Point(25, 225);
+            QuickRepair.Name = "QuickRepair";
+            QuickRepair.Size = new Size(90, 23);
+            QuickRepair.TabIndex = 3;
+            QuickRepair.Text = "Quick Repair";
+            QuickRepair.UseVisualStyleBackColor = true;
             // 
             // LastRepair
             // 
@@ -138,15 +146,15 @@
             SystemHealth.TabIndex = 1;
             SystemHealth.Text = "Overall System Health: Unknown";
             // 
-            // label3
+            // WelcomeMessage
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 35F);
-            label3.Location = new Point(150, 10);
-            label3.Name = "label3";
-            label3.Size = new Size(499, 62);
-            label3.TabIndex = 0;
-            label3.Text = "Welcome to CobaltOS!";
+            WelcomeMessage.AutoSize = true;
+            WelcomeMessage.Font = new Font("Segoe UI", 20F);
+            WelcomeMessage.Location = new Point(225, 10);
+            WelcomeMessage.Name = "WelcomeMessage";
+            WelcomeMessage.Size = new Size(345, 37);
+            WelcomeMessage.TabIndex = 0;
+            WelcomeMessage.Text = "Welcome to CobaltOS, User";
             // 
             // Optimization
             // 
@@ -303,7 +311,7 @@
             Utilities.Controls.Add(SleepPC);
             Utilities.Controls.Add(RestartPC);
             Utilities.Controls.Add(ShutdownPC);
-            Utilities.Controls.Add(label2);
+            Utilities.Controls.Add(PowerOptions);
             Utilities.Controls.Add(EnterSafeModeButton);
             Utilities.Controls.Add(EnterBIOSButton);
             Utilities.Controls.Add(EnterSafeMode);
@@ -315,7 +323,7 @@
             Utilities.Controls.Add(CreateRestoreButton);
             Utilities.Controls.Add(CreateRestorePoint);
             Utilities.Controls.Add(SearchForDupedFiles);
-            Utilities.Controls.Add(label1);
+            Utilities.Controls.Add(SearchDupedFiles);
             Utilities.Controls.Add(EnableOrDisableDefender);
             Utilities.Controls.Add(EnableOrDisableDefenderButton);
             Utilities.Location = new Point(4, 24);
@@ -334,6 +342,7 @@
             SleepPC.TabIndex = 17;
             SleepPC.Text = "Sleep";
             SleepPC.UseVisualStyleBackColor = true;
+            SleepPC.Click += SleepPC_Click;
             // 
             // RestartPC
             // 
@@ -343,6 +352,7 @@
             RestartPC.TabIndex = 16;
             RestartPC.Text = "Restart";
             RestartPC.UseVisualStyleBackColor = true;
+            RestartPC.Click += RestartPC_Click;
             // 
             // ShutdownPC
             // 
@@ -352,15 +362,16 @@
             ShutdownPC.TabIndex = 15;
             ShutdownPC.Text = "Shutdown";
             ShutdownPC.UseVisualStyleBackColor = true;
+            ShutdownPC.Click += ShutdownPC_Click;
             // 
-            // label2
+            // PowerOptions
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(25, 200);
-            label2.Name = "label2";
-            label2.Size = new Size(178, 15);
-            label2.TabIndex = 14;
-            label2.Text = "Quick 1 Click PC Power Options:";
+            PowerOptions.AutoSize = true;
+            PowerOptions.Location = new Point(25, 200);
+            PowerOptions.Name = "PowerOptions";
+            PowerOptions.Size = new Size(178, 15);
+            PowerOptions.TabIndex = 14;
+            PowerOptions.Text = "Quick 1 Click PC Power Options:";
             // 
             // EnterSafeModeButton
             // 
@@ -379,6 +390,7 @@
             EnterBIOSButton.TabIndex = 12;
             EnterBIOSButton.Text = "Enter BIOS";
             EnterBIOSButton.UseVisualStyleBackColor = true;
+            EnterBIOSButton.Click += EnterBIOSButton_Click;
             // 
             // EnterSafeMode
             // 
@@ -460,15 +472,16 @@
             SearchForDupedFiles.TabIndex = 3;
             SearchForDupedFiles.Text = "Search";
             SearchForDupedFiles.UseVisualStyleBackColor = true;
+            SearchForDupedFiles.Click += SearchForDupedFiles_Click;
             // 
-            // label1
+            // SearchDupedFiles
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(25, 50);
-            label1.Name = "label1";
-            label1.Size = new Size(139, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Search for Duplicate Files";
+            SearchDupedFiles.AutoSize = true;
+            SearchDupedFiles.Location = new Point(25, 50);
+            SearchDupedFiles.Name = "SearchDupedFiles";
+            SearchDupedFiles.Size = new Size(139, 15);
+            SearchDupedFiles.TabIndex = 2;
+            SearchDupedFiles.Text = "Search for Duplicate Files";
             // 
             // EnableOrDisableDefender
             // 
@@ -487,6 +500,7 @@
             EnableOrDisableDefenderButton.TabIndex = 0;
             EnableOrDisableDefenderButton.Text = "Disable";
             EnableOrDisableDefenderButton.UseVisualStyleBackColor = true;
+            EnableOrDisableDefenderButton.Click += EnableOrDisableDefenderButton_Click;
             // 
             // Settings
             // 
@@ -540,14 +554,6 @@
             OptimizeOnBoot.Text = "Optimize PC on boot";
             OptimizeOnBoot.UseVisualStyleBackColor = true;
             // 
-            // label4
-            // 
-            label4.Location = new Point(25, 100);
-            label4.Name = "label4";
-            label4.Size = new Size(377, 50);
-            label4.TabIndex = 4;
-            label4.Text = resources.GetString("label4.Text");
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -589,7 +595,7 @@
         private CheckBox BasicCommandRepairs;
         private CheckBox MalwareScan;
         private Button SearchForDupedFiles;
-        private Label label1;
+        private Label SearchDupedFiles;
         private Label EnableOrDisableDefender;
         private Button EnableOrDisableDefenderButton;
         private CheckBox OutputLogs;
@@ -609,14 +615,14 @@
         private Button SleepPC;
         private Button RestartPC;
         private Button ShutdownPC;
-        private Label label2;
+        private Label PowerOptions;
         private Button SaveSettingsButton;
         private CheckBox DarkMode;
         private Button ResetToDefaults;
-        private Button button1;
+        private Button QuickRepair;
         private Label LastRepair;
         private Label SystemHealth;
-        private Label label3;
-        private Label label4;
+        private Label WelcomeMessage;
+        private Label ParagraphAbout;
     }
 }

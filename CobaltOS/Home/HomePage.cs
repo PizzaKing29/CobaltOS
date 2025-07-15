@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CobaltOS.Home
+{
+    public static class HomePage
+    {
+        public static void OverallSystemHealth()
+        {
+
+        }
+
+        public static void LastRepair()
+        {
+
+        }
+
+        public static void QuickRepair()
+        {
+
+        }
+    }
+}

@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CobaltOS.Utilities
+{
+    public static class Statistics
+    {
+        public static void CreateSystemRestorePoint()
+        {
+
+        }
+
+        public static void AdvancedSystemStats()
+        {
+
+        }
+
+        public static void SystemSpecs()
+        {
+
+        }
+    }
+}
