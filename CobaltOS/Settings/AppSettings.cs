@@ -8,11 +8,6 @@ namespace CobaltOS
 {
     public static class AppSettings
     {
-        public static void OptimizePcOnBoot()
-        {
-
-        }
-
         public static void DarkMode()
         {
 

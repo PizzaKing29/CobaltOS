@@ -22,5 +22,10 @@ namespace CobaltOS
         {
 
         }
+
+        public static void AdjustApperanceOfWindows()
+        {
+
+        }
     }
 }

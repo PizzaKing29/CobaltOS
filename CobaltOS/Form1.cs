@@ -17,19 +17,23 @@ namespace CobaltOS
             FormBorderStyle = FormBorderStyle.FixedDialog;
             string user = Environment.UserName;
             WelcomeMessage.Text = $"Welcome to CobaltOS, {user}";
-            // MessageBox.Show("");
             CreateRestorePoint restorePoint = new CreateRestorePoint();
-            restorePoint.Show();
+            // restorePoint.Show();
         }
 
         private void SearchForDupedFiles_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void EnterBIOSButton_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void EnterSafeModeButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

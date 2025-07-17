@@ -24,5 +24,18 @@ namespace CobaltOS
             TopMost = true;
             StartPosition = FormStartPosition.CenterScreen;
         }
+
+        private void YesButton_Click(object sender, EventArgs e)
+        {
+            Close();
+            SystemRepair.CreateSystemRestorePoint();
+            SystemRepair.BeginPcRepair();
+        }
+
+        private void NoButton_Click(object sender, EventArgs e)
+        {
+            Close();
+            SystemRepair.BeginPcRepair();
+        }
     }
 }

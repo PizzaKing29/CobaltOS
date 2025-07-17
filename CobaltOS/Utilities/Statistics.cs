@@ -8,11 +8,6 @@ namespace CobaltOS
 {
     public static class Statistics
     {
-        public static void CreateSystemRestorePoint()
-        {
-
-        }
-
         public static void AdvancedSystemStats()
         {
 

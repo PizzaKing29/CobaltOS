@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace CobaltOS
 {
-    public static class RepairPopup
+    public static class SystemRepair
     {
         public static void BsodRepair()
         {
 
         }
 
-        public static void CheckComponentsHealth()
+        public static void UpdateDrivers()
         {
 
         }
@@ -36,6 +36,27 @@ namespace CobaltOS
         public static void BasicCommandRepairs()
         {
 
+        }
+
+        public static void CheckForWindowsUpdate()
+        {
+
+        }
+
+        public static void CreateSystemRestorePoint()
+        {
+
+        }
+
+        public static void BeginPcRepair()
+        {
+            BsodRepair();
+            UpdateDrivers();
+            NetworkServiceIssues();
+            ScanSevices();
+            ScanForMalware();
+            BasicCommandRepairs();
+            CheckForWindowsUpdate();
         }
     }
 }

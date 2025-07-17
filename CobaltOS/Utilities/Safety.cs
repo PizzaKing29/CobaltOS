@@ -10,10 +10,6 @@ namespace CobaltOS
 {
     public static class Safety
     {
-        public static void EnableDisableWindowsDefender()
-        {
-
-        }
 
         public static void SearchForDuplicateFiles()
         {

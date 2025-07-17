@@ -36,21 +36,21 @@
             LastRepair = new Label();
             WelcomeMessage = new Label();
             Optimization = new TabPage();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
+            OptimizePcOnBoot = new CheckBox();
+            AdjustPerformanceWindows = new CheckBox();
             StartOptimizingButton = new Button();
             FasterDNS = new CheckBox();
             TempFileCleaner = new CheckBox();
             GamingOptimization = new CheckBox();
             Repair = new TabPage();
-            checkBox1 = new CheckBox();
+            CheckWindowsUpdate = new CheckBox();
             OutputLogs = new CheckBox();
             BeginRepairButton = new Button();
             BasicCommandRepairs = new CheckBox();
             MalwareScan = new CheckBox();
             EvaluateServices = new CheckBox();
             FindNetworkSeviceIssues = new CheckBox();
-            CheckPCComponentsHealth = new CheckBox();
+            UpdateDrivers = new CheckBox();
             BSODRepair = new CheckBox();
             Utilities = new TabPage();
             EnterSafeModeButton = new Button();
@@ -61,8 +61,6 @@
             CreateFile = new Label();
             AdvancedStatsButton = new Button();
             AdvancedSystemStats = new Label();
-            CreateRestoreButton = new Button();
-            CreateRestorePoint = new Label();
             SearchForDupedFiles = new Button();
             SearchDupedFiles = new Label();
             Settings = new TabPage();
@@ -143,8 +141,8 @@
             // 
             // Optimization
             // 
-            Optimization.Controls.Add(checkBox3);
-            Optimization.Controls.Add(checkBox2);
+            Optimization.Controls.Add(OptimizePcOnBoot);
+            Optimization.Controls.Add(AdjustPerformanceWindows);
             Optimization.Controls.Add(StartOptimizingButton);
             Optimization.Controls.Add(FasterDNS);
             Optimization.Controls.Add(TempFileCleaner);
@@ -157,25 +155,25 @@
             Optimization.Text = "Optimization";
             Optimization.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // OptimizePcOnBoot
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(106, 153);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(137, 19);
-            checkBox3.TabIndex = 5;
-            checkBox3.Text = "Optimize PC on Boot";
-            checkBox3.UseVisualStyleBackColor = true;
+            OptimizePcOnBoot.AutoSize = true;
+            OptimizePcOnBoot.Location = new Point(106, 153);
+            OptimizePcOnBoot.Name = "OptimizePcOnBoot";
+            OptimizePcOnBoot.Size = new Size(137, 19);
+            OptimizePcOnBoot.TabIndex = 5;
+            OptimizePcOnBoot.Text = "Optimize PC on Boot";
+            OptimizePcOnBoot.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // AdjustPerformanceWindows
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(25, 100);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(300, 19);
-            checkBox2.TabIndex = 4;
-            checkBox2.Text = "Adjust the Apperance and Performance of Windows";
-            checkBox2.UseVisualStyleBackColor = true;
+            AdjustPerformanceWindows.AutoSize = true;
+            AdjustPerformanceWindows.Location = new Point(25, 100);
+            AdjustPerformanceWindows.Name = "AdjustPerformanceWindows";
+            AdjustPerformanceWindows.Size = new Size(300, 19);
+            AdjustPerformanceWindows.TabIndex = 4;
+            AdjustPerformanceWindows.Text = "Adjust the Apperance and Performance of Windows";
+            AdjustPerformanceWindows.UseVisualStyleBackColor = true;
             // 
             // StartOptimizingButton
             // 
@@ -218,14 +216,14 @@
             // 
             // Repair
             // 
-            Repair.Controls.Add(checkBox1);
+            Repair.Controls.Add(CheckWindowsUpdate);
             Repair.Controls.Add(OutputLogs);
             Repair.Controls.Add(BeginRepairButton);
             Repair.Controls.Add(BasicCommandRepairs);
             Repair.Controls.Add(MalwareScan);
             Repair.Controls.Add(EvaluateServices);
             Repair.Controls.Add(FindNetworkSeviceIssues);
-            Repair.Controls.Add(CheckPCComponentsHealth);
+            Repair.Controls.Add(UpdateDrivers);
             Repair.Controls.Add(BSODRepair);
             Repair.Location = new Point(4, 24);
             Repair.Name = "Repair";
@@ -235,15 +233,15 @@
             Repair.Text = "Repair";
             Repair.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // CheckWindowsUpdate
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(25, 175);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(170, 19);
-            checkBox1.TabIndex = 8;
-            checkBox1.Text = "Check for Windows Update";
-            checkBox1.UseVisualStyleBackColor = true;
+            CheckWindowsUpdate.AutoSize = true;
+            CheckWindowsUpdate.Location = new Point(25, 175);
+            CheckWindowsUpdate.Name = "CheckWindowsUpdate";
+            CheckWindowsUpdate.Size = new Size(170, 19);
+            CheckWindowsUpdate.TabIndex = 8;
+            CheckWindowsUpdate.Text = "Check for Windows Update";
+            CheckWindowsUpdate.UseVisualStyleBackColor = true;
             // 
             // OutputLogs
             // 
@@ -304,15 +302,15 @@
             FindNetworkSeviceIssues.Text = "Find Network Sevice Issues";
             FindNetworkSeviceIssues.UseVisualStyleBackColor = true;
             // 
-            // CheckPCComponentsHealth
+            // UpdateDrivers
             // 
-            CheckPCComponentsHealth.AutoSize = true;
-            CheckPCComponentsHealth.Location = new Point(25, 50);
-            CheckPCComponentsHealth.Name = "CheckPCComponentsHealth";
-            CheckPCComponentsHealth.Size = new Size(103, 19);
-            CheckPCComponentsHealth.TabIndex = 1;
-            CheckPCComponentsHealth.Text = "Update Drivers";
-            CheckPCComponentsHealth.UseVisualStyleBackColor = true;
+            UpdateDrivers.AutoSize = true;
+            UpdateDrivers.Location = new Point(25, 50);
+            UpdateDrivers.Name = "UpdateDrivers";
+            UpdateDrivers.Size = new Size(103, 19);
+            UpdateDrivers.TabIndex = 1;
+            UpdateDrivers.Text = "Update Drivers";
+            UpdateDrivers.UseVisualStyleBackColor = true;
             // 
             // BSODRepair
             // 
@@ -334,8 +332,6 @@
             Utilities.Controls.Add(CreateFile);
             Utilities.Controls.Add(AdvancedStatsButton);
             Utilities.Controls.Add(AdvancedSystemStats);
-            Utilities.Controls.Add(CreateRestoreButton);
-            Utilities.Controls.Add(CreateRestorePoint);
             Utilities.Controls.Add(SearchForDupedFiles);
             Utilities.Controls.Add(SearchDupedFiles);
             Utilities.Location = new Point(4, 24);
@@ -348,16 +344,17 @@
             // 
             // EnterSafeModeButton
             // 
-            EnterSafeModeButton.Location = new Point(124, 146);
+            EnterSafeModeButton.Location = new Point(124, 121);
             EnterSafeModeButton.Name = "EnterSafeModeButton";
             EnterSafeModeButton.Size = new Size(75, 23);
             EnterSafeModeButton.TabIndex = 13;
             EnterSafeModeButton.Text = "Enter";
             EnterSafeModeButton.UseVisualStyleBackColor = true;
+            EnterSafeModeButton.Click += EnterSafeModeButton_Click;
             // 
             // EnterBIOSButton
             // 
-            EnterBIOSButton.Location = new Point(93, 121);
+            EnterBIOSButton.Location = new Point(93, 96);
             EnterBIOSButton.Name = "EnterBIOSButton";
             EnterBIOSButton.Size = new Size(75, 23);
             EnterBIOSButton.TabIndex = 12;
@@ -368,7 +365,7 @@
             // EnterSafeMode
             // 
             EnterSafeMode.AutoSize = true;
-            EnterSafeMode.Location = new Point(25, 150);
+            EnterSafeMode.Location = new Point(25, 125);
             EnterSafeMode.Name = "EnterSafeMode";
             EnterSafeMode.Size = new Size(93, 15);
             EnterSafeMode.TabIndex = 11;
@@ -377,7 +374,7 @@
             // EnterBIOS
             // 
             EnterBIOS.AutoSize = true;
-            EnterBIOS.Location = new Point(25, 125);
+            EnterBIOS.Location = new Point(25, 100);
             EnterBIOS.Name = "EnterBIOS";
             EnterBIOS.Size = new Size(62, 15);
             EnterBIOS.TabIndex = 10;
@@ -385,7 +382,7 @@
             // 
             // CreateSpecsButton
             // 
-            CreateSpecsButton.Location = new Point(207, 96);
+            CreateSpecsButton.Location = new Point(207, 71);
             CreateSpecsButton.Name = "CreateSpecsButton";
             CreateSpecsButton.Size = new Size(75, 23);
             CreateSpecsButton.TabIndex = 9;
@@ -395,7 +392,7 @@
             // CreateFile
             // 
             CreateFile.AutoSize = true;
-            CreateFile.Location = new Point(25, 100);
+            CreateFile.Location = new Point(25, 75);
             CreateFile.Name = "CreateFile";
             CreateFile.Size = new Size(176, 15);
             CreateFile.TabIndex = 8;
@@ -403,7 +400,7 @@
             // 
             // AdvancedStatsButton
             // 
-            AdvancedStatsButton.Location = new Point(160, 71);
+            AdvancedStatsButton.Location = new Point(160, 46);
             AdvancedStatsButton.Name = "AdvancedStatsButton";
             AdvancedStatsButton.Size = new Size(75, 23);
             AdvancedStatsButton.TabIndex = 7;
@@ -413,29 +410,11 @@
             // AdvancedSystemStats
             // 
             AdvancedSystemStats.AutoSize = true;
-            AdvancedSystemStats.Location = new Point(25, 75);
+            AdvancedSystemStats.Location = new Point(25, 50);
             AdvancedSystemStats.Name = "AdvancedSystemStats";
             AdvancedSystemStats.Size = new Size(129, 15);
             AdvancedSystemStats.TabIndex = 6;
             AdvancedSystemStats.Text = "Advanced System Stats";
-            // 
-            // CreateRestoreButton
-            // 
-            CreateRestoreButton.Location = new Point(327, 46);
-            CreateRestoreButton.Name = "CreateRestoreButton";
-            CreateRestoreButton.Size = new Size(75, 23);
-            CreateRestoreButton.TabIndex = 5;
-            CreateRestoreButton.Text = "Create";
-            CreateRestoreButton.UseVisualStyleBackColor = true;
-            // 
-            // CreateRestorePoint
-            // 
-            CreateRestorePoint.AutoSize = true;
-            CreateRestorePoint.Location = new Point(25, 50);
-            CreateRestorePoint.Name = "CreateRestorePoint";
-            CreateRestorePoint.Size = new Size(296, 15);
-            CreateRestorePoint.TabIndex = 4;
-            CreateRestorePoint.Text = "Create System Restore Point (replace and add in repair)";
             // 
             // SearchForDupedFiles
             // 
@@ -533,7 +512,7 @@
         private CheckBox TempFileCleaner;
         private CheckBox EvaluateServices;
         private CheckBox FindNetworkSeviceIssues;
-        private CheckBox CheckPCComponentsHealth;
+        private CheckBox UpdateDrivers;
         private CheckBox BSODRepair;
         private CheckBox BasicCommandRepairs;
         private CheckBox MalwareScan;
@@ -545,8 +524,6 @@
         private Label CreateFile;
         private Button AdvancedStatsButton;
         private Label AdvancedSystemStats;
-        private Button CreateRestoreButton;
-        private Label CreateRestorePoint;
         private Button StartOptimizingButton;
         private Label EnterSafeMode;
         private Label EnterBIOS;
@@ -559,8 +536,8 @@
         private Label LastRepair;
         private Label WelcomeMessage;
         private Label ParagraphAbout;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
+        private CheckBox CheckWindowsUpdate;
+        private CheckBox AdjustPerformanceWindows;
+        private CheckBox OptimizePcOnBoot;
     }
 }

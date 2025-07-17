@@ -28,45 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            WarningMessage = new Label();
+            YesButton = new Button();
+            NoButton = new Button();
             SuspendLayout();
             // 
-            // label1
+            // WarningMessage
             // 
-            label1.Location = new Point(3, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(228, 52);
-            label1.TabIndex = 0;
-            label1.Text = "To proceed it is highly suggested to create a system restore point, would you like to?";
+            WarningMessage.Location = new Point(3, 9);
+            WarningMessage.Name = "WarningMessage";
+            WarningMessage.Size = new Size(228, 52);
+            WarningMessage.TabIndex = 0;
+            WarningMessage.Text = "To proceed it is highly suggested to create a system restore point, would you like to?";
             // 
-            // button1
+            // YesButton
             // 
-            button1.Location = new Point(12, 76);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 1;
-            button1.Text = "Yes";
-            button1.UseVisualStyleBackColor = true;
+            YesButton.Location = new Point(12, 76);
+            YesButton.Name = "YesButton";
+            YesButton.Size = new Size(75, 23);
+            YesButton.TabIndex = 1;
+            YesButton.Text = "Yes";
+            YesButton.UseVisualStyleBackColor = true;
+            YesButton.Click += YesButton_Click;
             // 
-            // button2
+            // NoButton
             // 
-            button2.Location = new Point(147, 76);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 2;
-            button2.Text = "No ⚠️";
-            button2.UseVisualStyleBackColor = true;
+            NoButton.Location = new Point(147, 76);
+            NoButton.Name = "NoButton";
+            NoButton.Size = new Size(75, 23);
+            NoButton.TabIndex = 2;
+            NoButton.Text = "No ⚠️";
+            NoButton.UseVisualStyleBackColor = true;
+            NoButton.Click += NoButton_Click;
             // 
             // CreateRestorePoint
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(234, 111);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(NoButton);
+            Controls.Add(YesButton);
+            Controls.Add(WarningMessage);
             Name = "CreateRestorePoint";
             Text = "CreateRestorePoint";
             Load += CreateRestorePoint_Load;
@@ -75,8 +77,8 @@
 
         #endregion
 
-        private Label label1;
-        private Button button1;
-        private Button button2;
+        private Label WarningMessage;
+        private Button YesButton;
+        private Button NoButton;
     }
 }

@@ -8,11 +8,6 @@ namespace CobaltOS
 {
     public static class HomePage
     {
-        public static void OverallSystemHealth()
-        {
-
-        }
-
         public static void LastRepair()
         {
 
