@@ -14,28 +14,12 @@ namespace CobaltOS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string User = Environment.UserName;
-            WelcomeMessage.Text = $"Welcome to CobaltOS, {User}";
-        }
-
-        private void ShutdownPC_Click(object sender, EventArgs e)
-        {
-            SystemActions.Shutdown();
-        }
-
-        private void RestartPC_Click(object sender, EventArgs e)
-        {
-            SystemActions.Restart();
-        }
-
-        private void SleepPC_Click(object sender, EventArgs e)
-        {
-            SystemActions.Sleep();
-        }
-
-        private void EnableOrDisableDefenderButton_Click(object sender, EventArgs e)
-        {
-            
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            string user = Environment.UserName;
+            WelcomeMessage.Text = $"Welcome to CobaltOS, {user}";
+            // MessageBox.Show("");
+            CreateRestorePoint restorePoint = new CreateRestorePoint();
+            restorePoint.Show();
         }
 
         private void SearchForDupedFiles_Click(object sender, EventArgs e)

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CobaltOS.Utilities
+namespace CobaltOS
 {
     public static class Statistics
     {

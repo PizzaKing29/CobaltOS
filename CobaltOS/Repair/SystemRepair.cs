@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CobaltOS.Repair
+namespace CobaltOS
 {
-    public static class SystemRepair
+    public static class RepairPopup
     {
         public static void BsodRepair()
         {

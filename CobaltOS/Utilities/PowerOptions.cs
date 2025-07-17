@@ -23,5 +23,10 @@ namespace CobaltOS
         {
 
         }
+
+        public static void EnterBios()
+        {
+            Process.Start("shutdown.exe", "/r /fw /t 0");
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CobaltOS.Home
+namespace CobaltOS
 {
     public static class HomePage
     {

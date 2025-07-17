@@ -9,4 +9,14 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="RJCodeAdvance.RJControls" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RJCodeAdvance.RJControls">
+      <HintPath>..\..\..\..\..\.nuget\packages\rjcodeadvance.rjcontrols\1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
