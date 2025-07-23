@@ -35,5 +35,47 @@ namespace CobaltOS
         {
 
         }
+
+        private void QuickRepair_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartOptimizingButton_Click(object sender, EventArgs e)
+        {
+            if (TempFileCleaner.Checked)
+            {
+                PcOptimization.ClearTempFiles();
+            }
+            PcOptimization.gamingMode = GamingOptimization.Checked;
+
+            if (AdjustPerformanceWindows.Checked)
+            {
+                PcOptimization.AdjustApperanceOfWindows();
+            }
+            if (TempFileCleaner.Checked)
+            {
+                PcOptimization.ClearTempFiles();
+            }
+            if (FasterDNS.Checked)
+            {
+                PcOptimization.SwitchDNS();
+            }
+        }
+
+        private void BeginRepairButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdvancedStatsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateSpecsButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

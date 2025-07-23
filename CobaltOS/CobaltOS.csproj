@@ -10,9 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="RJCodeAdvance.RJControls">
-      <HintPath>..\..\..\..\..\.nuget\packages\rjcodeadvance.rjcontrols\1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
-    </Reference>
+    <None Include="Optimization\PowerPlan.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Optimization\DNSSwitcher.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

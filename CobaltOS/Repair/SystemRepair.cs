@@ -45,7 +45,7 @@ namespace CobaltOS
 
         public static void CreateSystemRestorePoint()
         {
-
+            
         }
 
         public static void BeginPcRepair()

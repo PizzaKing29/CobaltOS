@@ -119,6 +119,7 @@
             QuickRepair.TabIndex = 3;
             QuickRepair.Text = "Quick Repair";
             QuickRepair.UseVisualStyleBackColor = true;
+            QuickRepair.Click += QuickRepair_Click;
             // 
             // LastRepair
             // 
@@ -183,6 +184,7 @@
             StartOptimizingButton.TabIndex = 3;
             StartOptimizingButton.Text = "Optimize";
             StartOptimizingButton.UseVisualStyleBackColor = true;
+            StartOptimizingButton.Click += StartOptimizingButton_Click;
             // 
             // FasterDNS
             // 
@@ -261,6 +263,7 @@
             BeginRepairButton.TabIndex = 6;
             BeginRepairButton.Text = "Begin";
             BeginRepairButton.UseVisualStyleBackColor = true;
+            BeginRepairButton.Click += BeginRepairButton_Click;
             // 
             // BasicCommandRepairs
             // 
@@ -388,6 +391,7 @@
             CreateSpecsButton.TabIndex = 9;
             CreateSpecsButton.Text = "Create";
             CreateSpecsButton.UseVisualStyleBackColor = true;
+            CreateSpecsButton.Click += CreateSpecsButton_Click;
             // 
             // CreateFile
             // 
@@ -406,6 +410,7 @@
             AdvancedStatsButton.TabIndex = 7;
             AdvancedStatsButton.Text = "Show";
             AdvancedStatsButton.UseVisualStyleBackColor = true;
+            AdvancedStatsButton.Click += AdvancedStatsButton_Click;
             // 
             // AdvancedSystemStats
             // 
