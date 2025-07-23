@@ -9,11 +9,11 @@ CobaltOS is a lightweight PC Repair, Cleanup, and System Optimization tool. Read
 
 ## 🟦Features
 
-Homepage: Run a quick repair and see when you last repaired your PC.\
+Homepage: Run a quick repair and see when you last repaired your PC.
 
-Optimization: Optimize your pc for daily tasks, or gaming. \
+Optimization: Optimize your pc for daily tasks, or gaming. 
 
-Repair: Approach common problems in your computer, scan for malware, parse BSOD Errors, and Update Drivers. \
+Repair: Approach common problems in your computer, scan for malware, parse BSOD Errors, and Update Drivers. 
 
 Utilities: Useful shortcuts for your computer or utilities for debugging/repair. 
 
