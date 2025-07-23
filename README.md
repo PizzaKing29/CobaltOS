@@ -1,4 +1,4 @@
-![CobaltOS](CobaltOS_Banner.png)
+![CobaltOS](Images/CobaltOS_Banner.png)
 
 > \[!IMPORTANT]
 > This project is a work in progress, please download the latest releases at [Latest Release](https://github.com/PizzaKing29/CobaltOS/releases). Any commits/pull requests are welcome and I am actively looking for translators.
