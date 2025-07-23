@@ -21,4 +21,10 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Optimization\CleanMgr.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

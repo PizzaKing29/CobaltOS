@@ -28,7 +28,7 @@ namespace CobaltOS
 
         public static void ClearTempFiles()
         {
-            var powershellFile = @"CobaltOS/Optimization/CleanMgr.ps1";
+            var powershellFile = @"Optimization/CleanMgr.ps1";
             var StartInfo = new ProcessStartInfo
             {
                 FileName = "Powershell.exe",
