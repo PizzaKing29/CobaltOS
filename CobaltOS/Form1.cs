@@ -75,7 +75,7 @@ namespace CobaltOS
 
         private void CreateSpecsButton_Click(object sender, EventArgs e)
         {
-
+            Statistics.SystemSpecs();
         }
     }
 }
