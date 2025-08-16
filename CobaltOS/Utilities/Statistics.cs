@@ -79,13 +79,12 @@ namespace CobaltOS
                 driverDate.Substring(4, 2) + "/" +
                 driverDate.Substring(6, 2)
                 ;
-                disks.AppendLine();
-                disks.AppendLine($"Gpu: {gpuIndex}");
-                disks.AppendLine($"Name: {gpuName}");
-                disks.AppendLine($"Total GPU Memory: {totalGpuMemory}");
-                disks.AppendLine($"Driver Version: {driverVersion}");
-                disks.AppendLine($"Driver Date: {driverDate}"); // Driver date (WMI stores as yyyymmddHHMMSS.000000+timezone)
-                disks.AppendLine();
+                gpu.AppendLine($"Gpu: {gpuIndex}");
+                gpu.AppendLine($"Name: {gpuName}");
+                gpu.AppendLine($"Total GPU Memory: {totalGpuMemory}");
+                gpu.AppendLine($"Driver Version: {driverVersion}");
+                gpu.AppendLine($"Driver Date: {driverDate}");
+                gpu.AppendLine();
                 gpuIndex++;
             }
 
@@ -111,8 +110,6 @@ namespace CobaltOS
 
 
             {disks}
-
-
             {gpu}
             """;
 
