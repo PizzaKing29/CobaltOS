@@ -77,5 +77,21 @@ namespace CobaltOS
         {
             Statistics.SystemSpecs();
         }
+
+        private void SaveSettingsButton_Click(object sender, EventArgs e)
+        {
+            if (DarkMode.Checked)
+            {
+                AppSettings.DarkMode();
+                DarkMode.Checked = true;
+                DarkMode.Refresh();
+            }
+        }
+
+        private void ResetToDefaults_Click(object sender, EventArgs e)
+        {
+            DarkMode.Checked = false;
+            DarkMode.Refresh();
+        }
     }
 }

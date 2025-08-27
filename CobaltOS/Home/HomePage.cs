@@ -10,7 +10,7 @@ namespace CobaltOS
     {
         public static void LastRepair()
         {
-
+            
         }
 
         public static void QuickRepair()
