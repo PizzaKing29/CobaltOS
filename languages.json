@@ -1,0 +1,161 @@
+{
+    "Note": "This is a work in progress, if you are interested in language translation please reach out",
+
+
+    "HomePage":
+    {
+        "WelcomeMessage":
+        {
+            "english": "Welcome to CobaltOS, User"
+        },
+
+        "AboutParagraph":
+        {
+            "english": "CobaltOS is an All-in-One PC Repair Program and offers several useful utilities for testing programs or helpful shortcuts! This program also offers multiple utilization features for perfect PC optimization."
+        },
+
+        "LastRepair":
+        {
+            "english": "Last Repair: None"
+        },
+
+        "QuickRepairButton":
+        {
+            "english": "Quick Repair"
+        }
+    },
+
+    "Optimization":
+    {
+        "GamingOptimizationBox":
+        {
+            "english": "Gaming Optimization"
+        },
+
+        "TempFileCleanerBox":
+        {
+            "english": "Temp File Cleaner"
+        },
+
+        "FasterDNSBox":
+        {
+            "english": "Faster DNS"
+        },
+
+        "AdjustTheAppearanceAndPerformanceOfWindowsBox":
+        {
+            "english": "Adjust the Appearance and Performance of Windows"
+        },
+
+        "OptimizeButton":
+        {
+            "english": "Optimize"
+        },
+
+        "OptimizeOnBootBox":
+        {
+            "english": "Optimize PC on boot"
+        }
+    },
+
+    "Repair":
+    {
+        "BSODRepairBox":
+        {
+            "english": "BSOD Repair"
+        },
+
+        "UpdateDriversBox":
+        {
+            "english": "Update Drivers"
+        },
+
+        "FindNetworkServiceIssuesBox":
+        {
+            "english": "Find Network Service Issues"
+        },
+
+        "EvaluateServicesBox":
+        {
+            "english": "Evalute Services"
+        },
+
+        "ScanForVirusesBox":
+        {
+            "english": "Scan for Viruses and Malware"
+        },
+
+        "BasicCommandRepairsBox":
+        {
+            "english": "Basic Command Repairs"
+        },
+
+        "CheckForUpdatesBox":
+        {
+            "english": "Check for Windows Update"
+        },
+
+        "BeginButton":
+        {
+            "english": "Begin"
+        },
+
+        "OutputAsLogsBox":
+        {
+            "english": "Output logs as a .txt file"
+        }
+    },
+
+    "Utilities":
+    {
+        "SearchForDupedFilesBox":
+        {
+            "english": "Search for Duplicate Files"
+        },
+
+        "SearchButton":
+        {
+            "english": "Search"
+        },
+
+        "AdvancedSystemStatsBox":
+        {
+            "english": "Advanced System Stats"
+        },
+
+        "ShowButton":
+        {
+            "english": "Show"
+        },
+
+        "SystemSpecsBox":
+        {
+            "english": "Create a .txt file of System Specs"
+        },
+
+        "CreateButton":
+        {
+            "english": "Create"
+        },
+
+        "EnterBiosBox":
+        {
+            "english": "Enter BIOS"
+        },
+
+        "EnterBiosButton":
+        {
+            "english": "Enter BIOS"
+        },
+
+        "EnterSafeModeBox":
+        {
+            "english": "Enter Safe Mode"
+        },
+
+        "EnterSafeModeButton":
+        {
+            "english": "Enter"
+        }
+    }
+}
