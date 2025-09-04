@@ -10,6 +10,7 @@ namespace CobaltOS
         public Form1()
         {
             InitializeComponent();
+            AutoScaleMode = AutoScaleMode.Dpi;
         }
 
         private void Form1_Load(object sender, EventArgs e)

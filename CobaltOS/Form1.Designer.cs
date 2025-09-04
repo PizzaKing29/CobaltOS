@@ -32,8 +32,8 @@
             Home = new TabControl();
             tabPage1 = new TabPage();
             ParagraphAbout = new Label();
-            QuickRepair = new Button();
-            LastRepair = new Label();
+            QuickRepairButton = new Button();
+            LastRepairLabel = new Label();
             WelcomeMessage = new Label();
             Optimization = new TabPage();
             OptimizePcOnBoot = new CheckBox();
@@ -53,54 +53,55 @@
             UpdateDrivers = new CheckBox();
             BSODRepair = new CheckBox();
             Utilities = new TabPage();
-            button4 = new Button();
-            label8 = new Label();
-            button3 = new Button();
-            button2 = new Button();
-            label7 = new Label();
-            button1 = new Button();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            NetworkHelpButton = new Button();
+            NetworkHelpLabel = new Label();
+            HostsFileButton = new Button();
+            HostsFileLabel = new Label();
+            NetworkTestButton = new Button();
+            NetworkTestLabel = new Label();
+            QuickIpButton = new Button();
+            QuickIpLabel = new Label();
+            RegistryEditorButton = new Button();
+            RegistryEditorLabel = new Label();
+            PortScannerButton = new Button();
+            PortScannerLabel = new Label();
+            ScriptRunnerButton = new Button();
+            ScriptRunnerLabel = new Label();
+            BootLogsButton = new Button();
+            BootLogsLabel = new Label();
+            ProtectedFilesButton = new Button();
+            ProtectedFilesLabel = new Label();
+            EmptyFolderFinderButton = new Button();
+            EmptyFolderFinderLabel = new Label();
+            LargeFileFinderButton = new Button();
+            LargeFileFinderLabel = new Label();
+            GetClipboardButton = new Button();
+            GetClipboardLabel = new Label();
+            OpenPowershellButton = new Button();
+            OpenCmdButton = new Button();
+            OpenTerminalLabel = new Label();
+            OpenTaskManagerButton = new Button();
+            OpenTaskManagerLabel = new Label();
+            NetworkUtilities = new Label();
+            DeveloperAndPowerUtilities = new Label();
+            SystemReportingAndLogs = new Label();
+            FileAndStorageUtilities = new Label();
+            SystemAndQuickAccess = new Label();
             EnterSafeModeButton = new Button();
             EnterBIOSButton = new Button();
             EnterSafeMode = new Label();
-            EnterBIOS = new Label();
-            CreateSpecsButton = new Button();
-            CreateFile = new Label();
-            AdvancedStatsButton = new Button();
-            AdvancedSystemStats = new Label();
-            SearchForDupedFiles = new Button();
-            SearchDupedFiles = new Label();
+            EnterBIOSLabel = new Label();
+            SystemSpecsButton = new Button();
+            SystemSpecsLabel = new Label();
+            SystemHealthButton = new Button();
+            SystemHealthLabel = new Label();
+            SearchDupedFilesButton = new Button();
+            SearchDupedFilesLabel = new Label();
             Settings = new TabPage();
             ResetToDefaults = new Button();
             SaveSettingsButton = new Button();
             DarkMode = new CheckBox();
-            label9 = new Label();
-            button5 = new Button();
-            label10 = new Label();
-            button6 = new Button();
-            label11 = new Label();
-            button7 = new Button();
-            label12 = new Label();
-            button8 = new Button();
-            label13 = new Label();
-            button9 = new Button();
-            label14 = new Label();
-            button10 = new Button();
-            label15 = new Label();
-            button11 = new Button();
-            label16 = new Label();
-            button12 = new Button();
-            label17 = new Label();
-            button13 = new Button();
-            label18 = new Label();
-            button14 = new Button();
-            label19 = new Label();
-            button15 = new Button();
+            DisableServices = new CheckBox();
             Home.SuspendLayout();
             tabPage1.SuspendLayout();
             Optimization.SuspendLayout();
@@ -126,8 +127,8 @@
             // tabPage1
             // 
             tabPage1.Controls.Add(ParagraphAbout);
-            tabPage1.Controls.Add(QuickRepair);
-            tabPage1.Controls.Add(LastRepair);
+            tabPage1.Controls.Add(QuickRepairButton);
+            tabPage1.Controls.Add(LastRepairLabel);
             tabPage1.Controls.Add(WelcomeMessage);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
@@ -145,24 +146,24 @@
             ParagraphAbout.TabIndex = 4;
             ParagraphAbout.Text = resources.GetString("ParagraphAbout.Text");
             // 
-            // QuickRepair
+            // QuickRepairButton
             // 
-            QuickRepair.Location = new Point(25, 200);
-            QuickRepair.Name = "QuickRepair";
-            QuickRepair.Size = new Size(90, 23);
-            QuickRepair.TabIndex = 3;
-            QuickRepair.Text = "Quick Repair";
-            QuickRepair.UseVisualStyleBackColor = true;
-            QuickRepair.Click += QuickRepair_Click;
+            QuickRepairButton.Location = new Point(25, 200);
+            QuickRepairButton.Name = "QuickRepairButton";
+            QuickRepairButton.Size = new Size(90, 23);
+            QuickRepairButton.TabIndex = 3;
+            QuickRepairButton.Text = "Quick Repair";
+            QuickRepairButton.UseVisualStyleBackColor = true;
+            QuickRepairButton.Click += QuickRepair_Click;
             // 
-            // LastRepair
+            // LastRepairLabel
             // 
-            LastRepair.AutoSize = true;
-            LastRepair.Location = new Point(25, 175);
-            LastRepair.Name = "LastRepair";
-            LastRepair.Size = new Size(99, 15);
-            LastRepair.TabIndex = 2;
-            LastRepair.Text = "Last Repair: None";
+            LastRepairLabel.AutoSize = true;
+            LastRepairLabel.Location = new Point(25, 175);
+            LastRepairLabel.Name = "LastRepairLabel";
+            LastRepairLabel.Size = new Size(99, 15);
+            LastRepairLabel.TabIndex = 2;
+            LastRepairLabel.Text = "Last Repair: None";
             // 
             // WelcomeMessage
             // 
@@ -176,6 +177,7 @@
             // 
             // Optimization
             // 
+            Optimization.Controls.Add(DisableServices);
             Optimization.Controls.Add(OptimizePcOnBoot);
             Optimization.Controls.Add(AdjustPerformanceWindows);
             Optimization.Controls.Add(StartOptimizingButton);
@@ -193,7 +195,7 @@
             // OptimizePcOnBoot
             // 
             OptimizePcOnBoot.AutoSize = true;
-            OptimizePcOnBoot.Location = new Point(106, 153);
+            OptimizePcOnBoot.Location = new Point(106, 178);
             OptimizePcOnBoot.Name = "OptimizePcOnBoot";
             OptimizePcOnBoot.Size = new Size(137, 19);
             OptimizePcOnBoot.TabIndex = 5;
@@ -212,7 +214,7 @@
             // 
             // StartOptimizingButton
             // 
-            StartOptimizingButton.Location = new Point(25, 150);
+            StartOptimizingButton.Location = new Point(25, 175);
             StartOptimizingButton.Name = "StartOptimizingButton";
             StartOptimizingButton.Size = new Size(75, 23);
             StartOptimizingButton.TabIndex = 3;
@@ -361,50 +363,50 @@
             // 
             // Utilities
             // 
-            Utilities.Controls.Add(button15);
-            Utilities.Controls.Add(label19);
-            Utilities.Controls.Add(button14);
-            Utilities.Controls.Add(label18);
-            Utilities.Controls.Add(button13);
-            Utilities.Controls.Add(label17);
-            Utilities.Controls.Add(button12);
-            Utilities.Controls.Add(label16);
-            Utilities.Controls.Add(button11);
-            Utilities.Controls.Add(label15);
-            Utilities.Controls.Add(button10);
-            Utilities.Controls.Add(label14);
-            Utilities.Controls.Add(button9);
-            Utilities.Controls.Add(label13);
-            Utilities.Controls.Add(button8);
-            Utilities.Controls.Add(label12);
-            Utilities.Controls.Add(button7);
-            Utilities.Controls.Add(label11);
-            Utilities.Controls.Add(button6);
-            Utilities.Controls.Add(label10);
-            Utilities.Controls.Add(button5);
-            Utilities.Controls.Add(label9);
-            Utilities.Controls.Add(button4);
-            Utilities.Controls.Add(label8);
-            Utilities.Controls.Add(button3);
-            Utilities.Controls.Add(button2);
-            Utilities.Controls.Add(label7);
-            Utilities.Controls.Add(button1);
-            Utilities.Controls.Add(label6);
-            Utilities.Controls.Add(label5);
-            Utilities.Controls.Add(label4);
-            Utilities.Controls.Add(label3);
-            Utilities.Controls.Add(label2);
-            Utilities.Controls.Add(label1);
+            Utilities.Controls.Add(NetworkHelpButton);
+            Utilities.Controls.Add(NetworkHelpLabel);
+            Utilities.Controls.Add(HostsFileButton);
+            Utilities.Controls.Add(HostsFileLabel);
+            Utilities.Controls.Add(NetworkTestButton);
+            Utilities.Controls.Add(NetworkTestLabel);
+            Utilities.Controls.Add(QuickIpButton);
+            Utilities.Controls.Add(QuickIpLabel);
+            Utilities.Controls.Add(RegistryEditorButton);
+            Utilities.Controls.Add(RegistryEditorLabel);
+            Utilities.Controls.Add(PortScannerButton);
+            Utilities.Controls.Add(PortScannerLabel);
+            Utilities.Controls.Add(ScriptRunnerButton);
+            Utilities.Controls.Add(ScriptRunnerLabel);
+            Utilities.Controls.Add(BootLogsButton);
+            Utilities.Controls.Add(BootLogsLabel);
+            Utilities.Controls.Add(ProtectedFilesButton);
+            Utilities.Controls.Add(ProtectedFilesLabel);
+            Utilities.Controls.Add(EmptyFolderFinderButton);
+            Utilities.Controls.Add(EmptyFolderFinderLabel);
+            Utilities.Controls.Add(LargeFileFinderButton);
+            Utilities.Controls.Add(LargeFileFinderLabel);
+            Utilities.Controls.Add(GetClipboardButton);
+            Utilities.Controls.Add(GetClipboardLabel);
+            Utilities.Controls.Add(OpenPowershellButton);
+            Utilities.Controls.Add(OpenCmdButton);
+            Utilities.Controls.Add(OpenTerminalLabel);
+            Utilities.Controls.Add(OpenTaskManagerButton);
+            Utilities.Controls.Add(OpenTaskManagerLabel);
+            Utilities.Controls.Add(NetworkUtilities);
+            Utilities.Controls.Add(DeveloperAndPowerUtilities);
+            Utilities.Controls.Add(SystemReportingAndLogs);
+            Utilities.Controls.Add(FileAndStorageUtilities);
+            Utilities.Controls.Add(SystemAndQuickAccess);
             Utilities.Controls.Add(EnterSafeModeButton);
             Utilities.Controls.Add(EnterBIOSButton);
             Utilities.Controls.Add(EnterSafeMode);
-            Utilities.Controls.Add(EnterBIOS);
-            Utilities.Controls.Add(CreateSpecsButton);
-            Utilities.Controls.Add(CreateFile);
-            Utilities.Controls.Add(AdvancedStatsButton);
-            Utilities.Controls.Add(AdvancedSystemStats);
-            Utilities.Controls.Add(SearchForDupedFiles);
-            Utilities.Controls.Add(SearchDupedFiles);
+            Utilities.Controls.Add(EnterBIOSLabel);
+            Utilities.Controls.Add(SystemSpecsButton);
+            Utilities.Controls.Add(SystemSpecsLabel);
+            Utilities.Controls.Add(SystemHealthButton);
+            Utilities.Controls.Add(SystemHealthLabel);
+            Utilities.Controls.Add(SearchDupedFilesButton);
+            Utilities.Controls.Add(SearchDupedFilesLabel);
             Utilities.Location = new Point(4, 24);
             Utilities.Name = "Utilities";
             Utilities.Padding = new Padding(3);
@@ -413,118 +415,316 @@
             Utilities.Text = "Utilities";
             Utilities.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // NetworkHelpButton
             // 
-            button4.Location = new Point(128, 161);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 25;
-            button4.Text = "Copy";
-            button4.UseVisualStyleBackColor = true;
+            NetworkHelpButton.Location = new Point(661, 309);
+            NetworkHelpButton.Name = "NetworkHelpButton";
+            NetworkHelpButton.Size = new Size(75, 23);
+            NetworkHelpButton.TabIndex = 47;
+            NetworkHelpButton.Text = "Find Issues";
+            NetworkHelpButton.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // NetworkHelpLabel
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(3, 165);
-            label8.Name = "label8";
-            label8.Size = new Size(119, 15);
-            label8.TabIndex = 24;
-            label8.Text = "Get Recent Clipboard";
+            NetworkHelpLabel.AutoSize = true;
+            NetworkHelpLabel.Location = new Point(486, 313);
+            NetworkHelpLabel.Name = "NetworkHelpLabel";
+            NetworkHelpLabel.Size = new Size(169, 15);
+            NetworkHelpLabel.TabIndex = 46;
+            NetworkHelpLabel.Text = "Quick Network Troubleshooter";
             // 
-            // button3
+            // HostsFileButton
             // 
-            button3.Location = new Point(84, 131);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 23;
-            button3.Text = "Powershell";
-            button3.UseVisualStyleBackColor = true;
+            HostsFileButton.Location = new Point(584, 284);
+            HostsFileButton.Name = "HostsFileButton";
+            HostsFileButton.Size = new Size(75, 23);
+            HostsFileButton.TabIndex = 45;
+            HostsFileButton.Text = "Edit File";
+            HostsFileButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // HostsFileLabel
             // 
-            button2.Location = new Point(3, 131);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 22;
-            button2.Text = "Cmd";
-            button2.UseVisualStyleBackColor = true;
+            HostsFileLabel.AutoSize = true;
+            HostsFileLabel.Location = new Point(486, 288);
+            HostsFileLabel.Name = "HostsFileLabel";
+            HostsFileLabel.Size = new Size(92, 15);
+            HostsFileLabel.TabIndex = 44;
+            HostsFileLabel.Text = "Hosts File Editor";
             // 
-            // label7
+            // NetworkTestButton
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(3, 113);
-            label7.Name = "label7";
-            label7.Size = new Size(138, 15);
-            label7.TabIndex = 21;
-            label7.Text = "Open Terminal as Admin";
+            NetworkTestButton.Location = new Point(605, 259);
+            NetworkTestButton.Name = "NetworkTestButton";
+            NetworkTestButton.Size = new Size(75, 23);
+            NetworkTestButton.TabIndex = 43;
+            NetworkTestButton.Text = "Test Speed";
+            NetworkTestButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // NetworkTestLabel
             // 
-            button1.Location = new Point(121, 84);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 20;
-            button1.Text = "Open";
-            button1.UseVisualStyleBackColor = true;
+            NetworkTestLabel.AutoSize = true;
+            NetworkTestLabel.Location = new Point(486, 263);
+            NetworkTestLabel.Name = "NetworkTestLabel";
+            NetworkTestLabel.Size = new Size(111, 15);
+            NetworkTestLabel.TabIndex = 42;
+            NetworkTestLabel.Text = "Network Speed Test";
             // 
-            // label6
+            // QuickIpButton
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(3, 88);
-            label6.Name = "label6";
-            label6.Size = new Size(112, 15);
-            label6.TabIndex = 19;
-            label6.Text = "Open Task Manager";
+            QuickIpButton.Location = new Point(605, 234);
+            QuickIpButton.Name = "QuickIpButton";
+            QuickIpButton.Size = new Size(75, 23);
+            QuickIpButton.TabIndex = 41;
+            QuickIpButton.Text = "Get Info";
+            QuickIpButton.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // QuickIpLabel
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 15F);
-            label5.Location = new Point(482, 200);
-            label5.Name = "label5";
-            label5.Size = new Size(313, 28);
-            label5.TabIndex = 18;
-            label5.Text = "Network And Connectivity Utilities";
+            QuickIpLabel.AutoSize = true;
+            QuickIpLabel.Location = new Point(486, 238);
+            QuickIpLabel.Name = "QuickIpLabel";
+            QuickIpLabel.Size = new Size(113, 15);
+            QuickIpLabel.TabIndex = 40;
+            QuickIpLabel.Text = "Quick IP / MAC Info";
             // 
-            // label4
+            // RegistryEditorButton
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15F);
-            label4.Location = new Point(0, 200);
-            label4.Name = "label4";
-            label4.Size = new Size(288, 28);
-            label4.TabIndex = 17;
-            label4.Text = "Developer / Power User Utilities";
+            RegistryEditorButton.Location = new Point(153, 284);
+            RegistryEditorButton.Name = "RegistryEditorButton";
+            RegistryEditorButton.Size = new Size(75, 23);
+            RegistryEditorButton.TabIndex = 39;
+            RegistryEditorButton.Text = "Open";
+            RegistryEditorButton.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // RegistryEditorLabel
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15F);
-            label3.Location = new Point(542, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(253, 28);
-            label3.TabIndex = 16;
-            label3.Text = "System Reporting And Logs";
+            RegistryEditorLabel.AutoSize = true;
+            RegistryEditorLabel.Location = new Point(4, 288);
+            RegistryEditorLabel.Name = "RegistryEditorLabel";
+            RegistryEditorLabel.Size = new Size(143, 15);
+            RegistryEditorLabel.TabIndex = 38;
+            RegistryEditorLabel.Text = "Registry Snapshot / Editor";
             // 
-            // label2
+            // PortScannerButton
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(265, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(227, 28);
-            label2.TabIndex = 15;
-            label2.Text = "File And Storage Utilities";
+            PortScannerButton.Location = new Point(84, 259);
+            PortScannerButton.Name = "PortScannerButton";
+            PortScannerButton.Size = new Size(75, 23);
+            PortScannerButton.TabIndex = 37;
+            PortScannerButton.Text = "Scan Ports";
+            PortScannerButton.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // PortScannerLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(232, 28);
-            label1.TabIndex = 14;
-            label1.Text = "System And Quick Access";
+            PortScannerLabel.AutoSize = true;
+            PortScannerLabel.Location = new Point(4, 263);
+            PortScannerLabel.Name = "PortScannerLabel";
+            PortScannerLabel.Size = new Size(74, 15);
+            PortScannerLabel.TabIndex = 36;
+            PortScannerLabel.Text = "Port Scanner";
+            // 
+            // ScriptRunnerButton
+            // 
+            ScriptRunnerButton.Location = new Point(87, 234);
+            ScriptRunnerButton.Name = "ScriptRunnerButton";
+            ScriptRunnerButton.Size = new Size(75, 23);
+            ScriptRunnerButton.TabIndex = 35;
+            ScriptRunnerButton.Text = "Open";
+            ScriptRunnerButton.UseVisualStyleBackColor = true;
+            // 
+            // ScriptRunnerLabel
+            // 
+            ScriptRunnerLabel.AutoSize = true;
+            ScriptRunnerLabel.Location = new Point(3, 238);
+            ScriptRunnerLabel.Name = "ScriptRunnerLabel";
+            ScriptRunnerLabel.Size = new Size(78, 15);
+            ScriptRunnerLabel.TabIndex = 34;
+            ScriptRunnerLabel.Text = "Script Runner";
+            // 
+            // BootLogsButton
+            // 
+            BootLogsButton.Location = new Point(641, 84);
+            BootLogsButton.Name = "BootLogsButton";
+            BootLogsButton.Size = new Size(75, 23);
+            BootLogsButton.TabIndex = 33;
+            BootLogsButton.Text = "View Logs";
+            BootLogsButton.UseVisualStyleBackColor = true;
+            // 
+            // BootLogsLabel
+            // 
+            BootLogsLabel.AutoSize = true;
+            BootLogsLabel.Location = new Point(542, 88);
+            BootLogsLabel.Name = "BootLogsLabel";
+            BootLogsLabel.Size = new Size(93, 15);
+            BootLogsLabel.TabIndex = 32;
+            BootLogsLabel.Text = "Boot Log Viewer";
+            // 
+            // ProtectedFilesButton
+            // 
+            ProtectedFilesButton.Location = new Point(423, 109);
+            ProtectedFilesButton.Name = "ProtectedFilesButton";
+            ProtectedFilesButton.Size = new Size(75, 23);
+            ProtectedFilesButton.TabIndex = 31;
+            ProtectedFilesButton.Text = "Show";
+            ProtectedFilesButton.UseVisualStyleBackColor = true;
+            // 
+            // ProtectedFilesLabel
+            // 
+            ProtectedFilesLabel.AutoSize = true;
+            ProtectedFilesLabel.Location = new Point(265, 113);
+            ProtectedFilesLabel.Name = "ProtectedFilesLabel";
+            ProtectedFilesLabel.Size = new Size(152, 15);
+            ProtectedFilesLabel.TabIndex = 30;
+            ProtectedFilesLabel.Text = "Show / Hide Protected Files";
+            // 
+            // EmptyFolderFinderButton
+            // 
+            EmptyFolderFinderButton.Location = new Point(384, 84);
+            EmptyFolderFinderButton.Name = "EmptyFolderFinderButton";
+            EmptyFolderFinderButton.Size = new Size(75, 23);
+            EmptyFolderFinderButton.TabIndex = 29;
+            EmptyFolderFinderButton.Text = "Locate";
+            EmptyFolderFinderButton.UseVisualStyleBackColor = true;
+            // 
+            // EmptyFolderFinderLabel
+            // 
+            EmptyFolderFinderLabel.AutoSize = true;
+            EmptyFolderFinderLabel.Location = new Point(265, 88);
+            EmptyFolderFinderLabel.Name = "EmptyFolderFinderLabel";
+            EmptyFolderFinderLabel.Size = new Size(113, 15);
+            EmptyFolderFinderLabel.TabIndex = 28;
+            EmptyFolderFinderLabel.Text = "Empty Folder Finder";
+            // 
+            // LargeFileFinderButton
+            // 
+            LargeFileFinderButton.Location = new Point(364, 59);
+            LargeFileFinderButton.Name = "LargeFileFinderButton";
+            LargeFileFinderButton.Size = new Size(75, 23);
+            LargeFileFinderButton.TabIndex = 27;
+            LargeFileFinderButton.Text = "Find Files";
+            LargeFileFinderButton.UseVisualStyleBackColor = true;
+            // 
+            // LargeFileFinderLabel
+            // 
+            LargeFileFinderLabel.AutoSize = true;
+            LargeFileFinderLabel.Location = new Point(265, 63);
+            LargeFileFinderLabel.Name = "LargeFileFinderLabel";
+            LargeFileFinderLabel.Size = new Size(93, 15);
+            LargeFileFinderLabel.TabIndex = 26;
+            LargeFileFinderLabel.Text = "Large File Finder";
+            // 
+            // GetClipboardButton
+            // 
+            GetClipboardButton.Location = new Point(128, 161);
+            GetClipboardButton.Name = "GetClipboardButton";
+            GetClipboardButton.Size = new Size(75, 23);
+            GetClipboardButton.TabIndex = 25;
+            GetClipboardButton.Text = "Copy";
+            GetClipboardButton.UseVisualStyleBackColor = true;
+            // 
+            // GetClipboardLabel
+            // 
+            GetClipboardLabel.AutoSize = true;
+            GetClipboardLabel.Location = new Point(3, 165);
+            GetClipboardLabel.Name = "GetClipboardLabel";
+            GetClipboardLabel.Size = new Size(119, 15);
+            GetClipboardLabel.TabIndex = 24;
+            GetClipboardLabel.Text = "Get Recent Clipboard";
+            // 
+            // OpenPowershellButton
+            // 
+            OpenPowershellButton.Location = new Point(84, 131);
+            OpenPowershellButton.Name = "OpenPowershellButton";
+            OpenPowershellButton.Size = new Size(75, 23);
+            OpenPowershellButton.TabIndex = 23;
+            OpenPowershellButton.Text = "Powershell";
+            OpenPowershellButton.UseVisualStyleBackColor = true;
+            // 
+            // OpenCmdButton
+            // 
+            OpenCmdButton.Location = new Point(3, 131);
+            OpenCmdButton.Name = "OpenCmdButton";
+            OpenCmdButton.Size = new Size(75, 23);
+            OpenCmdButton.TabIndex = 22;
+            OpenCmdButton.Text = "Cmd";
+            OpenCmdButton.UseVisualStyleBackColor = true;
+            // 
+            // OpenTerminalLabel
+            // 
+            OpenTerminalLabel.AutoSize = true;
+            OpenTerminalLabel.Location = new Point(3, 113);
+            OpenTerminalLabel.Name = "OpenTerminalLabel";
+            OpenTerminalLabel.Size = new Size(138, 15);
+            OpenTerminalLabel.TabIndex = 21;
+            OpenTerminalLabel.Text = "Open Terminal as Admin";
+            // 
+            // OpenTaskManagerButton
+            // 
+            OpenTaskManagerButton.Location = new Point(121, 84);
+            OpenTaskManagerButton.Name = "OpenTaskManagerButton";
+            OpenTaskManagerButton.Size = new Size(75, 23);
+            OpenTaskManagerButton.TabIndex = 20;
+            OpenTaskManagerButton.Text = "Open";
+            OpenTaskManagerButton.UseVisualStyleBackColor = true;
+            // 
+            // OpenTaskManagerLabel
+            // 
+            OpenTaskManagerLabel.AutoSize = true;
+            OpenTaskManagerLabel.Location = new Point(3, 88);
+            OpenTaskManagerLabel.Name = "OpenTaskManagerLabel";
+            OpenTaskManagerLabel.Size = new Size(112, 15);
+            OpenTaskManagerLabel.TabIndex = 19;
+            OpenTaskManagerLabel.Text = "Open Task Manager";
+            // 
+            // NetworkUtilities
+            // 
+            NetworkUtilities.AutoSize = true;
+            NetworkUtilities.Font = new Font("Segoe UI", 15F);
+            NetworkUtilities.Location = new Point(482, 200);
+            NetworkUtilities.Name = "NetworkUtilities";
+            NetworkUtilities.Size = new Size(313, 28);
+            NetworkUtilities.TabIndex = 18;
+            NetworkUtilities.Text = "Network And Connectivity Utilities";
+            // 
+            // DeveloperAndPowerUtilities
+            // 
+            DeveloperAndPowerUtilities.AutoSize = true;
+            DeveloperAndPowerUtilities.Font = new Font("Segoe UI", 15F);
+            DeveloperAndPowerUtilities.Location = new Point(0, 200);
+            DeveloperAndPowerUtilities.Name = "DeveloperAndPowerUtilities";
+            DeveloperAndPowerUtilities.Size = new Size(288, 28);
+            DeveloperAndPowerUtilities.TabIndex = 17;
+            DeveloperAndPowerUtilities.Text = "Developer / Power User Utilities";
+            // 
+            // SystemReportingAndLogs
+            // 
+            SystemReportingAndLogs.AutoSize = true;
+            SystemReportingAndLogs.Font = new Font("Segoe UI", 15F);
+            SystemReportingAndLogs.Location = new Point(542, 0);
+            SystemReportingAndLogs.Name = "SystemReportingAndLogs";
+            SystemReportingAndLogs.Size = new Size(253, 28);
+            SystemReportingAndLogs.TabIndex = 16;
+            SystemReportingAndLogs.Text = "System Reporting And Logs";
+            // 
+            // FileAndStorageUtilities
+            // 
+            FileAndStorageUtilities.AutoSize = true;
+            FileAndStorageUtilities.Font = new Font("Segoe UI", 15F);
+            FileAndStorageUtilities.Location = new Point(265, 0);
+            FileAndStorageUtilities.Name = "FileAndStorageUtilities";
+            FileAndStorageUtilities.Size = new Size(227, 28);
+            FileAndStorageUtilities.TabIndex = 15;
+            FileAndStorageUtilities.Text = "File And Storage Utilities";
+            // 
+            // SystemAndQuickAccess
+            // 
+            SystemAndQuickAccess.AutoSize = true;
+            SystemAndQuickAccess.Font = new Font("Segoe UI", 15F);
+            SystemAndQuickAccess.Location = new Point(0, 0);
+            SystemAndQuickAccess.Name = "SystemAndQuickAccess";
+            SystemAndQuickAccess.Size = new Size(232, 28);
+            SystemAndQuickAccess.TabIndex = 14;
+            SystemAndQuickAccess.Text = "System And Quick Access";
             // 
             // EnterSafeModeButton
             // 
@@ -555,71 +755,71 @@
             EnterSafeMode.TabIndex = 11;
             EnterSafeMode.Text = "Enter Safe Mode";
             // 
-            // EnterBIOS
+            // EnterBIOSLabel
             // 
-            EnterBIOS.AutoSize = true;
-            EnterBIOS.Location = new Point(3, 38);
-            EnterBIOS.Name = "EnterBIOS";
-            EnterBIOS.Size = new Size(62, 15);
-            EnterBIOS.TabIndex = 10;
-            EnterBIOS.Text = "Enter BIOS";
+            EnterBIOSLabel.AutoSize = true;
+            EnterBIOSLabel.Location = new Point(3, 38);
+            EnterBIOSLabel.Name = "EnterBIOSLabel";
+            EnterBIOSLabel.Size = new Size(62, 15);
+            EnterBIOSLabel.TabIndex = 10;
+            EnterBIOSLabel.Text = "Enter BIOS";
             // 
-            // CreateSpecsButton
+            // SystemSpecsButton
             // 
-            CreateSpecsButton.Location = new Point(717, 34);
-            CreateSpecsButton.Name = "CreateSpecsButton";
-            CreateSpecsButton.Size = new Size(75, 23);
-            CreateSpecsButton.TabIndex = 9;
-            CreateSpecsButton.Text = "Create";
-            CreateSpecsButton.UseVisualStyleBackColor = true;
-            CreateSpecsButton.Click += CreateSpecsButton_Click;
+            SystemSpecsButton.Location = new Point(717, 34);
+            SystemSpecsButton.Name = "SystemSpecsButton";
+            SystemSpecsButton.Size = new Size(75, 23);
+            SystemSpecsButton.TabIndex = 9;
+            SystemSpecsButton.Text = "Create";
+            SystemSpecsButton.UseVisualStyleBackColor = true;
+            SystemSpecsButton.Click += CreateSpecsButton_Click;
             // 
-            // CreateFile
+            // SystemSpecsLabel
             // 
-            CreateFile.AutoSize = true;
-            CreateFile.Location = new Point(542, 38);
-            CreateFile.Name = "CreateFile";
-            CreateFile.Size = new Size(176, 15);
-            CreateFile.TabIndex = 8;
-            CreateFile.Text = "Create a .txt file of System Specs";
+            SystemSpecsLabel.AutoSize = true;
+            SystemSpecsLabel.Location = new Point(542, 38);
+            SystemSpecsLabel.Name = "SystemSpecsLabel";
+            SystemSpecsLabel.Size = new Size(176, 15);
+            SystemSpecsLabel.TabIndex = 8;
+            SystemSpecsLabel.Text = "Create a .txt file of System Specs";
             // 
-            // AdvancedStatsButton
+            // SystemHealthButton
             // 
-            AdvancedStatsButton.Location = new Point(652, 59);
-            AdvancedStatsButton.Name = "AdvancedStatsButton";
-            AdvancedStatsButton.Size = new Size(75, 23);
-            AdvancedStatsButton.TabIndex = 7;
-            AdvancedStatsButton.Text = "Show";
-            AdvancedStatsButton.UseVisualStyleBackColor = true;
-            AdvancedStatsButton.Click += AdvancedStatsButton_Click;
+            SystemHealthButton.Location = new Point(652, 59);
+            SystemHealthButton.Name = "SystemHealthButton";
+            SystemHealthButton.Size = new Size(75, 23);
+            SystemHealthButton.TabIndex = 7;
+            SystemHealthButton.Text = "Show";
+            SystemHealthButton.UseVisualStyleBackColor = true;
+            SystemHealthButton.Click += AdvancedStatsButton_Click;
             // 
-            // AdvancedSystemStats
+            // SystemHealthLabel
             // 
-            AdvancedSystemStats.AutoSize = true;
-            AdvancedSystemStats.Location = new Point(542, 63);
-            AdvancedSystemStats.Name = "AdvancedSystemStats";
-            AdvancedSystemStats.Size = new Size(104, 15);
-            AdvancedSystemStats.TabIndex = 6;
-            AdvancedSystemStats.Text = "Get System Health";
+            SystemHealthLabel.AutoSize = true;
+            SystemHealthLabel.Location = new Point(542, 63);
+            SystemHealthLabel.Name = "SystemHealthLabel";
+            SystemHealthLabel.Size = new Size(104, 15);
+            SystemHealthLabel.TabIndex = 6;
+            SystemHealthLabel.Text = "Get System Health";
             // 
-            // SearchForDupedFiles
+            // SearchDupedFilesButton
             // 
-            SearchForDupedFiles.Location = new Point(410, 34);
-            SearchForDupedFiles.Name = "SearchForDupedFiles";
-            SearchForDupedFiles.Size = new Size(75, 23);
-            SearchForDupedFiles.TabIndex = 3;
-            SearchForDupedFiles.Text = "Search";
-            SearchForDupedFiles.UseVisualStyleBackColor = true;
-            SearchForDupedFiles.Click += SearchForDupedFiles_Click;
+            SearchDupedFilesButton.Location = new Point(410, 34);
+            SearchDupedFilesButton.Name = "SearchDupedFilesButton";
+            SearchDupedFilesButton.Size = new Size(75, 23);
+            SearchDupedFilesButton.TabIndex = 3;
+            SearchDupedFilesButton.Text = "Search";
+            SearchDupedFilesButton.UseVisualStyleBackColor = true;
+            SearchDupedFilesButton.Click += SearchForDupedFiles_Click;
             // 
-            // SearchDupedFiles
+            // SearchDupedFilesLabel
             // 
-            SearchDupedFiles.AutoSize = true;
-            SearchDupedFiles.Location = new Point(265, 38);
-            SearchDupedFiles.Name = "SearchDupedFiles";
-            SearchDupedFiles.Size = new Size(139, 15);
-            SearchDupedFiles.TabIndex = 2;
-            SearchDupedFiles.Text = "Search for Duplicate Files";
+            SearchDupedFilesLabel.AutoSize = true;
+            SearchDupedFilesLabel.Location = new Point(265, 38);
+            SearchDupedFilesLabel.Name = "SearchDupedFilesLabel";
+            SearchDupedFilesLabel.Size = new Size(139, 15);
+            SearchDupedFilesLabel.TabIndex = 2;
+            SearchDupedFilesLabel.Text = "Search for Duplicate Files";
             // 
             // Settings
             // 
@@ -662,203 +862,15 @@
             DarkMode.Text = "Dark Mode";
             DarkMode.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // DisableServices
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(265, 63);
-            label9.Name = "label9";
-            label9.Size = new Size(93, 15);
-            label9.TabIndex = 26;
-            label9.Text = "Large File Finder";
-            // 
-            // button5
-            // 
-            button5.Location = new Point(364, 59);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 23);
-            button5.TabIndex = 27;
-            button5.Text = "Find Files";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(265, 88);
-            label10.Name = "label10";
-            label10.Size = new Size(113, 15);
-            label10.TabIndex = 28;
-            label10.Text = "Empty Folder Finder";
-            // 
-            // button6
-            // 
-            button6.Location = new Point(384, 84);
-            button6.Name = "button6";
-            button6.Size = new Size(75, 23);
-            button6.TabIndex = 29;
-            button6.Text = "Locate";
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(265, 113);
-            label11.Name = "label11";
-            label11.Size = new Size(152, 15);
-            label11.TabIndex = 30;
-            label11.Text = "Show / Hide Protected Files";
-            // 
-            // button7
-            // 
-            button7.Location = new Point(423, 109);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 23);
-            button7.TabIndex = 31;
-            button7.Text = "Show";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(542, 88);
-            label12.Name = "label12";
-            label12.Size = new Size(93, 15);
-            label12.TabIndex = 32;
-            label12.Text = "Boot Log Viewer";
-            // 
-            // button8
-            // 
-            button8.Location = new Point(641, 84);
-            button8.Name = "button8";
-            button8.Size = new Size(75, 23);
-            button8.TabIndex = 33;
-            button8.Text = "View Logs";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(3, 238);
-            label13.Name = "label13";
-            label13.Size = new Size(78, 15);
-            label13.TabIndex = 34;
-            label13.Text = "Script Runner";
-            // 
-            // button9
-            // 
-            button9.Location = new Point(87, 234);
-            button9.Name = "button9";
-            button9.Size = new Size(75, 23);
-            button9.TabIndex = 35;
-            button9.Text = "Open";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(4, 263);
-            label14.Name = "label14";
-            label14.Size = new Size(74, 15);
-            label14.TabIndex = 36;
-            label14.Text = "Port Scanner";
-            // 
-            // button10
-            // 
-            button10.Location = new Point(84, 259);
-            button10.Name = "button10";
-            button10.Size = new Size(75, 23);
-            button10.TabIndex = 37;
-            button10.Text = "Scan Ports";
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(4, 288);
-            label15.Name = "label15";
-            label15.Size = new Size(143, 15);
-            label15.TabIndex = 38;
-            label15.Text = "Registry Snapshot / Editor";
-            // 
-            // button11
-            // 
-            button11.Location = new Point(153, 284);
-            button11.Name = "button11";
-            button11.Size = new Size(75, 23);
-            button11.TabIndex = 39;
-            button11.Text = "Open";
-            button11.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(486, 238);
-            label16.Name = "label16";
-            label16.Size = new Size(113, 15);
-            label16.TabIndex = 40;
-            label16.Text = "Quick IP / MAC Info";
-            // 
-            // button12
-            // 
-            button12.Location = new Point(605, 234);
-            button12.Name = "button12";
-            button12.Size = new Size(75, 23);
-            button12.TabIndex = 41;
-            button12.Text = "Get Info";
-            button12.UseVisualStyleBackColor = true;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(486, 263);
-            label17.Name = "label17";
-            label17.Size = new Size(111, 15);
-            label17.TabIndex = 42;
-            label17.Text = "Network Speed Test";
-            // 
-            // button13
-            // 
-            button13.Location = new Point(605, 259);
-            button13.Name = "button13";
-            button13.Size = new Size(75, 23);
-            button13.TabIndex = 43;
-            button13.Text = "Test Speed";
-            button13.UseVisualStyleBackColor = true;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new Point(486, 288);
-            label18.Name = "label18";
-            label18.Size = new Size(92, 15);
-            label18.TabIndex = 44;
-            label18.Text = "Hosts File Editor";
-            // 
-            // button14
-            // 
-            button14.Location = new Point(584, 284);
-            button14.Name = "button14";
-            button14.Size = new Size(75, 23);
-            button14.TabIndex = 45;
-            button14.Text = "Edit File";
-            button14.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Location = new Point(486, 313);
-            label19.Name = "label19";
-            label19.Size = new Size(169, 15);
-            label19.TabIndex = 46;
-            label19.Text = "Quick Network Troubleshooter";
-            // 
-            // button15
-            // 
-            button15.Location = new Point(661, 309);
-            button15.Name = "button15";
-            button15.Size = new Size(75, 23);
-            button15.TabIndex = 47;
-            button15.Text = "Find Issues";
-            button15.UseVisualStyleBackColor = true;
+            DisableServices.AutoSize = true;
+            DisableServices.Location = new Point(25, 125);
+            DisableServices.Name = "DisableServices";
+            DisableServices.Size = new Size(178, 19);
+            DisableServices.TabIndex = 6;
+            DisableServices.Text = "Disable Unnecessary Services";
+            DisableServices.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -900,62 +912,63 @@
         private CheckBox BSODRepair;
         private CheckBox BasicCommandRepairs;
         private CheckBox MalwareScan;
-        private Button SearchForDupedFiles;
-        private Label SearchDupedFiles;
+        private Button SearchDupedFilesButton;
+        private Label SearchDupedFilesLabel;
         private CheckBox OutputLogs;
         private Button BeginRepairButton;
-        private Button CreateSpecsButton;
-        private Label CreateFile;
-        private Button AdvancedStatsButton;
-        private Label AdvancedSystemStats;
+        private Button SystemSpecsButton;
+        private Label SystemSpecsLabel;
+        private Button SystemHealthButton;
+        private Label SystemHealthLabel;
         private Button StartOptimizingButton;
         private Label EnterSafeMode;
-        private Label EnterBIOS;
+        private Label EnterBIOSLabel;
         private Button EnterBIOSButton;
         private Button EnterSafeModeButton;
         private Button SaveSettingsButton;
         private CheckBox DarkMode;
         private Button ResetToDefaults;
-        private Button QuickRepair;
-        private Label LastRepair;
+        private Button QuickRepairButton;
+        private Label LastRepairLabel;
         private Label WelcomeMessage;
         private Label ParagraphAbout;
         private CheckBox CheckWindowsUpdate;
         private CheckBox AdjustPerformanceWindows;
         private CheckBox OptimizePcOnBoot;
-        private Label label3;
-        private Label label2;
-        private Label label1;
-        private Label label7;
-        private Button button1;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Button button4;
-        private Label label8;
-        private Button button3;
-        private Button button2;
-        private Button button6;
-        private Label label10;
-        private Button button5;
-        private Label label9;
-        private Label label16;
-        private Button button11;
-        private Label label15;
-        private Button button10;
-        private Label label14;
-        private Button button9;
-        private Label label13;
-        private Button button8;
-        private Label label12;
-        private Button button7;
-        private Label label11;
-        private Label label17;
-        private Button button12;
-        private Button button14;
-        private Label label18;
-        private Button button13;
-        private Button button15;
-        private Label label19;
+        private Label SystemReportingAndLogs;
+        private Label FileAndStorageUtilities;
+        private Label SystemAndQuickAccess;
+        private Label OpenTerminalLabel;
+        private Button OpenTaskManagerButton;
+        private Label OpenTaskManagerLabel;
+        private Label NetworkUtilities;
+        private Label DeveloperAndPowerUtilities;
+        private Button GetClipboardButton;
+        private Label GetClipboardLabel;
+        private Button OpenPowershellButton;
+        private Button OpenCmdButton;
+        private Button EmptyFolderFinderButton;
+        private Label EmptyFolderFinderLabel;
+        private Button LargeFileFinderButton;
+        private Label LargeFileFinderLabel;
+        private Label QuickIpLabel;
+        private Button RegistryEditorButton;
+        private Label RegistryEditorLabel;
+        private Button PortScannerButton;
+        private Label PortScannerLabel;
+        private Button ScriptRunnerButton;
+        private Label ScriptRunnerLabel;
+        private Button BootLogsButton;
+        private Label BootLogsLabel;
+        private Button ProtectedFilesButton;
+        private Label ProtectedFilesLabel;
+        private Label NetworkTestLabel;
+        private Button QuickIpButton;
+        private Button HostsFileButton;
+        private Label HostsFileLabel;
+        private Button NetworkTestButton;
+        private Button NetworkHelpButton;
+        private Label NetworkHelpLabel;
+        private CheckBox DisableServices;
     }
 }
