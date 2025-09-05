@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.Versioning;
 using System.Management;
 using System.Globalization;
@@ -11,13 +7,8 @@ using System.Globalization;
 namespace CobaltOS
 {
     [SupportedOSPlatform("windows")]
-    public static class Statistics
+    public static class SystemReports
     {
-        public static void AdvancedSystemStats()
-        {
-
-        }
-
         public static void SystemSpecs()
         {
             string computerName = Environment.MachineName;
@@ -165,6 +156,24 @@ namespace CobaltOS
 
             // Create the system specs text file
             File.WriteAllText(Path.Combine(@$"C:\Users\{username}\Downloads", "SystemSpecs.txt"), specsText);
+        }
+
+        public static void SystemHealth()
+        {
+
+        }
+    }
+
+    public partial class Form1
+    {
+        public void SystemSpecsButton_Click(object sender, EventArgs e)
+        {
+            SystemReports.SystemSpecs();
+        }
+
+        public void SystemHealthButton_Click(object sender, EventArgs e)
+        {
+            SystemReports.SystemHealth();
         }
     }
 }

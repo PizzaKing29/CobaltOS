@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Security.Policy;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+#nullable disable
 
 namespace CobaltOS
 {
@@ -20,26 +21,6 @@ namespace CobaltOS
             WelcomeMessage.Text = $"Welcome to CobaltOS, {user}";
             CreateRestorePoint restorePoint = new CreateRestorePoint();
             // restorePoint.Show();
-        }
-
-        private void SearchForDupedFiles_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EnterBIOSButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EnterSafeModeButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void QuickRepair_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void StartOptimizingButton_Click(object sender, EventArgs e)
@@ -72,11 +53,6 @@ namespace CobaltOS
         private void AdvancedStatsButton_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void CreateSpecsButton_Click(object sender, EventArgs e)
-        {
-            Statistics.SystemSpecs();
         }
 
         private void SaveSettingsButton_Click(object sender, EventArgs e)

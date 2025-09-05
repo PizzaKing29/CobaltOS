@@ -154,7 +154,6 @@
             QuickRepairButton.TabIndex = 3;
             QuickRepairButton.Text = "Quick Repair";
             QuickRepairButton.UseVisualStyleBackColor = true;
-            QuickRepairButton.Click += QuickRepair_Click;
             // 
             // LastRepairLabel
             // 
@@ -423,6 +422,7 @@
             NetworkHelpButton.TabIndex = 47;
             NetworkHelpButton.Text = "Find Issues";
             NetworkHelpButton.UseVisualStyleBackColor = true;
+            NetworkHelpButton.Click += NetworkHelpButton_Click;
             // 
             // NetworkHelpLabel
             // 
@@ -441,6 +441,7 @@
             HostsFileButton.TabIndex = 45;
             HostsFileButton.Text = "Edit File";
             HostsFileButton.UseVisualStyleBackColor = true;
+            HostsFileButton.Click += HostsFileButton_Click;
             // 
             // HostsFileLabel
             // 
@@ -459,6 +460,7 @@
             NetworkTestButton.TabIndex = 43;
             NetworkTestButton.Text = "Test Speed";
             NetworkTestButton.UseVisualStyleBackColor = true;
+            NetworkTestButton.Click += NetworkTestButton_Click;
             // 
             // NetworkTestLabel
             // 
@@ -477,6 +479,7 @@
             QuickIpButton.TabIndex = 41;
             QuickIpButton.Text = "Get Info";
             QuickIpButton.UseVisualStyleBackColor = true;
+            QuickIpButton.Click += QuickIpButton_Click;
             // 
             // QuickIpLabel
             // 
@@ -495,6 +498,7 @@
             RegistryEditorButton.TabIndex = 39;
             RegistryEditorButton.Text = "Open";
             RegistryEditorButton.UseVisualStyleBackColor = true;
+            RegistryEditorButton.Click += RegistryEditorButton_Click;
             // 
             // RegistryEditorLabel
             // 
@@ -513,6 +517,7 @@
             PortScannerButton.TabIndex = 37;
             PortScannerButton.Text = "Scan Ports";
             PortScannerButton.UseVisualStyleBackColor = true;
+            PortScannerButton.Click += PortScannerButton_Click;
             // 
             // PortScannerLabel
             // 
@@ -531,6 +536,7 @@
             ScriptRunnerButton.TabIndex = 35;
             ScriptRunnerButton.Text = "Open";
             ScriptRunnerButton.UseVisualStyleBackColor = true;
+            ScriptRunnerButton.Click += ScriptRunnerButton_Click;
             // 
             // ScriptRunnerLabel
             // 
@@ -549,6 +555,7 @@
             BootLogsButton.TabIndex = 33;
             BootLogsButton.Text = "View Logs";
             BootLogsButton.UseVisualStyleBackColor = true;
+            BootLogsButton.Click += BootLogsButton_Click;
             // 
             // BootLogsLabel
             // 
@@ -567,6 +574,7 @@
             ProtectedFilesButton.TabIndex = 31;
             ProtectedFilesButton.Text = "Show";
             ProtectedFilesButton.UseVisualStyleBackColor = true;
+            ProtectedFilesButton.Click += ProtectedFilesButton_Click;
             // 
             // ProtectedFilesLabel
             // 
@@ -585,6 +593,7 @@
             EmptyFolderFinderButton.TabIndex = 29;
             EmptyFolderFinderButton.Text = "Locate";
             EmptyFolderFinderButton.UseVisualStyleBackColor = true;
+            EmptyFolderFinderButton.Click += EmptyFolderFinderButton_Click;
             // 
             // EmptyFolderFinderLabel
             // 
@@ -603,6 +612,7 @@
             LargeFileFinderButton.TabIndex = 27;
             LargeFileFinderButton.Text = "Find Files";
             LargeFileFinderButton.UseVisualStyleBackColor = true;
+            LargeFileFinderButton.Click += LargeFileFinderButton_Click;
             // 
             // LargeFileFinderLabel
             // 
@@ -621,6 +631,7 @@
             GetClipboardButton.TabIndex = 25;
             GetClipboardButton.Text = "Copy";
             GetClipboardButton.UseVisualStyleBackColor = true;
+            GetClipboardButton.Click += GetClipboardButton_Click;
             // 
             // GetClipboardLabel
             // 
@@ -639,6 +650,7 @@
             OpenPowershellButton.TabIndex = 23;
             OpenPowershellButton.Text = "Powershell";
             OpenPowershellButton.UseVisualStyleBackColor = true;
+            OpenPowershellButton.Click += OpenPowershellButton_Click;
             // 
             // OpenCmdButton
             // 
@@ -648,6 +660,7 @@
             OpenCmdButton.TabIndex = 22;
             OpenCmdButton.Text = "Cmd";
             OpenCmdButton.UseVisualStyleBackColor = true;
+            OpenCmdButton.Click += OpenCmdButton_Click;
             // 
             // OpenTerminalLabel
             // 
@@ -666,6 +679,7 @@
             OpenTaskManagerButton.TabIndex = 20;
             OpenTaskManagerButton.Text = "Open";
             OpenTaskManagerButton.UseVisualStyleBackColor = true;
+            OpenTaskManagerButton.Click += OpenTaskManagerButton_Click;
             // 
             // OpenTaskManagerLabel
             // 
@@ -772,7 +786,7 @@
             SystemSpecsButton.TabIndex = 9;
             SystemSpecsButton.Text = "Create";
             SystemSpecsButton.UseVisualStyleBackColor = true;
-            SystemSpecsButton.Click += CreateSpecsButton_Click;
+            SystemSpecsButton.Click += SystemSpecsButton_Click;
             // 
             // SystemSpecsLabel
             // 
@@ -791,7 +805,7 @@
             SystemHealthButton.TabIndex = 7;
             SystemHealthButton.Text = "Show";
             SystemHealthButton.UseVisualStyleBackColor = true;
-            SystemHealthButton.Click += AdvancedStatsButton_Click;
+            SystemHealthButton.Click += SystemHealthButton_Click;
             // 
             // SystemHealthLabel
             // 
@@ -810,7 +824,7 @@
             SearchDupedFilesButton.TabIndex = 3;
             SearchDupedFilesButton.Text = "Search";
             SearchDupedFilesButton.UseVisualStyleBackColor = true;
-            SearchDupedFilesButton.Click += SearchForDupedFiles_Click;
+            SearchDupedFilesButton.Click += SearchDupedFilesButton_Click;
             // 
             // SearchDupedFilesLabel
             // 
