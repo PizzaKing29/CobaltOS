@@ -4,11 +4,12 @@ namespace CobaltOS
     {
         public static void RunScripts()
         {
-            
+            ScriptRunnerForm scriptRunner = new ScriptRunnerForm();
+            scriptRunner.Show();
         }
     }
 
-    public partial class Form1
+    public partial class CobaltOS
     {
         public void ScriptRunnerButton_Click(object sender, EventArgs e)
         {

@@ -34,7 +34,7 @@ namespace CobaltOS
         }
     }
 
-    public partial class Form1
+    public partial class CobaltOS
     {
         public void OpenTaskManagerButton_Click(object sender, EventArgs e)
         {

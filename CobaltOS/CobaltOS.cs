@@ -6,9 +6,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CobaltOS
 {
-    public partial class Form1 : Form
+    public partial class CobaltOS : Form
     {
-        public Form1()
+        public CobaltOS()
         {
             InitializeComponent();
             AutoScaleMode = AutoScaleMode.Dpi;

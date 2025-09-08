@@ -8,7 +8,7 @@ namespace CobaltOS
         }
     }
 
-    public partial class Form1
+    public partial class CobaltOS
     {
         public void HostsFileButton_Click(object sender, EventArgs e)
         {
