@@ -12,13 +12,14 @@ namespace CobaltOS
         {
             InitializeComponent();
             AutoScaleMode = AutoScaleMode.Dpi;
+            Icon = new Icon(@"CobaltOSLogo.ico");
+            MaximizeBox = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            string user = Environment.UserName;
-            WelcomeMessage.Text = $"Welcome to CobaltOS, {user}";
+            WelcomeMessage.Text = $"Welcome to CobaltOS, {ConstVariables.Username}";
             CreateRestorePoint restorePoint = new CreateRestorePoint();
             // restorePoint.Show();
         }

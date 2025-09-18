@@ -7,24 +7,13 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>CobaltOSLogo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Optimization\PowerPlan.ps1">
+    <Content Include="CobaltOSLogo.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Optimization\DNSSwitcher.ps1">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Optimization\CleanMgr.ps1">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

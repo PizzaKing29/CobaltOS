@@ -36,6 +36,7 @@
             LastRepairLabel = new Label();
             WelcomeMessage = new Label();
             Optimization = new TabPage();
+            DisableServices = new CheckBox();
             OptimizePcOnBoot = new CheckBox();
             AdjustPerformanceWindows = new CheckBox();
             StartOptimizingButton = new Button();
@@ -101,13 +102,15 @@
             ResetToDefaults = new Button();
             SaveSettingsButton = new Button();
             DarkMode = new CheckBox();
-            DisableServices = new CheckBox();
+            UsefulApps = new TabPage();
+            panel1 = new Panel();
             Home.SuspendLayout();
             tabPage1.SuspendLayout();
             Optimization.SuspendLayout();
             Repair.SuspendLayout();
             Utilities.SuspendLayout();
             Settings.SuspendLayout();
+            UsefulApps.SuspendLayout();
             SuspendLayout();
             // 
             // Home
@@ -116,6 +119,7 @@
             Home.Controls.Add(Optimization);
             Home.Controls.Add(Repair);
             Home.Controls.Add(Utilities);
+            Home.Controls.Add(UsefulApps);
             Home.Controls.Add(Settings);
             Home.Location = new Point(1, 0);
             Home.Multiline = true;
@@ -190,6 +194,16 @@
             Optimization.TabIndex = 1;
             Optimization.Text = "Optimization";
             Optimization.UseVisualStyleBackColor = true;
+            // 
+            // DisableServices
+            // 
+            DisableServices.AutoSize = true;
+            DisableServices.Location = new Point(25, 125);
+            DisableServices.Name = "DisableServices";
+            DisableServices.Size = new Size(178, 19);
+            DisableServices.TabIndex = 6;
+            DisableServices.Text = "Disable Unnecessary Services";
+            DisableServices.UseVisualStyleBackColor = true;
             // 
             // OptimizePcOnBoot
             // 
@@ -876,23 +890,31 @@
             DarkMode.Text = "Dark Mode";
             DarkMode.UseVisualStyleBackColor = true;
             // 
-            // DisableServices
+            // UsefulApps
             // 
-            DisableServices.AutoSize = true;
-            DisableServices.Location = new Point(25, 125);
-            DisableServices.Name = "DisableServices";
-            DisableServices.Size = new Size(178, 19);
-            DisableServices.TabIndex = 6;
-            DisableServices.Text = "Disable Unnecessary Services";
-            DisableServices.UseVisualStyleBackColor = true;
+            UsefulApps.Controls.Add(panel1);
+            UsefulApps.Location = new Point(4, 24);
+            UsefulApps.Name = "UsefulApps";
+            UsefulApps.Padding = new Padding(3);
+            UsefulApps.Size = new Size(795, 424);
+            UsefulApps.TabIndex = 5;
+            UsefulApps.Text = "Useful Apps";
+            UsefulApps.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // panel1
+            // 
+            panel1.Location = new Point(150, 121);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(200, 100);
+            panel1.TabIndex = 0;
+            // 
+            // CobaltOS
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(Home);
-            Name = "Form1";
+            Name = "CobaltOS";
             Text = "CobaltOS";
             Load += Form1_Load;
             Home.ResumeLayout(false);
@@ -906,6 +928,7 @@
             Utilities.PerformLayout();
             Settings.ResumeLayout(false);
             Settings.PerformLayout();
+            UsefulApps.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -984,5 +1007,7 @@
         private Button NetworkHelpButton;
         private Label NetworkHelpLabel;
         private CheckBox DisableServices;
+        private TabPage UsefulApps;
+        private Panel panel1;
     }
 }
